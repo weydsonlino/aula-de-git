@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Irei adivinhar o número que você está pensando</h1>
+    <label for="name">Digite o número</label>
+    <input type="text" name="name" />
+    <button>Enviar</button>
+  </body>
+</html>
+<script>
+  const button = document.querySelector("button");
+  button.addEventListener("click", () => {
+    const number = document.querySelector("input").value;
+    alert(`O número é ${number}`);
+  });
+</script>
